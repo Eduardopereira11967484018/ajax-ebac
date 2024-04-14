@@ -9,7 +9,6 @@ async function fetchData() {
 
         // Atualiza os elementos HTML com os dados obtidos
         document.getElementById('profileName').textContent = data.name;
-        document.getElementById('profileUsername').textContent = `@${data.login}`;
         document.getElementById('repoCount').textContent = data.public_repos;
         document.getElementById('followersCount').textContent = data.followers;
         document.getElementById('followingCount').textContent = data.following;
